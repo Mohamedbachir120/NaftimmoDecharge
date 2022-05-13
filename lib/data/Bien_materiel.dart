@@ -65,7 +65,6 @@ class Bien_materiel {
         final response =
             await dio.post('${IP_ADDRESS}existeBienDecharge', data: this.toJson(),  
             );
-            print(response);
         if (response.toString() == "true") {
           return true;
         } else {

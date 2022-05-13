@@ -7,7 +7,6 @@ import 'operations.dart';
 import 'dart:async';
 import 'package:path/path.dart';
 import 'package:easy_autocomplete/easy_autocomplete.dart';
-
 import 'package:sqflite/sqflite.dart';
 import 'dart:io' as io;
 

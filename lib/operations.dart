@@ -74,8 +74,10 @@ class _MyAppState extends State<MyApp> {
 
   Future<int> _initPackageInfo() async {
     await initConnectivity();
-  if(_connectionStatus == ConnectivityResult.wifi){
     User user = await User.auth();
+    String s = await user.getToken();
+    print(s);
+  if(_connectionStatus == ConnectivityResult.wifi){
     try {
       
     

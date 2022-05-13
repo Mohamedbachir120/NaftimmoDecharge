@@ -231,7 +231,7 @@ class _HistoryPageState extends State<HistoryPage> {
                               if (response.toString() == "true") {
                                 final database = openDatabase(join(
                                     await getDatabasesPath(),
-                                    'naftal_scan.db'));
+                                    DBNAME));
                                 final db = await database;
                                 await db.rawUpdate(
                                     "UPDATE Bien_materiel SET stockage = 1 where stockage = 0");
